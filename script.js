@@ -7,7 +7,7 @@ const supabase = createClient(supabaseURL, supabaseKey);
 
 const tbody = document.getElementById('books');
 let {data:books, error} = await supabase
-    .from('books')
+    .from('Books')
     .select('*');
 
 if (error) {
